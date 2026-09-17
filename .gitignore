@@ -17,6 +17,10 @@ graft/
 # Session transcripts and prompt traces — local analysis, not product.
 transcripts/
 
+# dagr orchestration run state — machine-local work tracking (pane ids, actor
+# models, timestamps), the same category as transcripts above. Never product.
+.dagr/
+
 # Claude Code settings — regenerated per machine by `graft init`, never shared
 # and never part of a PR diff (the hook helpers/skills alongside them stay tracked).
 .claude/settings.json
